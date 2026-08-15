@@ -1,8 +1,8 @@
 [gd_scene format=4 uid="uid://bhss5e8oo23ys"]
 
 [ext_resource type="Texture2D" uid="uid://dpw85ux7ri542" path="res://iso_tileset.png" id="1_ci6au"]
-[ext_resource type="PackedScene" uid="uid://qt1ecehippy" path="res://Scenes/car.tscn" id="2_p3ir5"]
-[ext_resource type="Script" uid="uid://bniuqmpgahikn" path="res://Scenes/car.gd" id="3_myvm1"]
+[ext_resource type="PackedScene" uid="uid://qt1ecehippy" path="res://scenes/car.tscn" id="2_p3ir5"]
+[ext_resource type="Script" uid="uid://4v6eo5dixm8o" path="res://car_spawning.gd" id="2_paxxb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wijl4"]
 texture = ExtResource("1_ci6au")
@@ -70,9 +70,15 @@ tile_map_data = PackedByteArray("AAACAAAAAAABAAEAAAAEAAAAAAABAAEAAAD7/wQAAAABAAE
 tile_set = SubResource("TileSet_d1hr6")
 y_sort_origin = 1
 
-[node name="Car" parent="." unique_id=425227326 instance=ExtResource("2_p3ir5")]
-z_index = 1
+[node name="Car Spawn 1" type="Marker2D" parent="." unique_id=1902307524]
 position = Vector2(-106, 49)
-script = ExtResource("3_myvm1")
+script = ExtResource("2_paxxb")
+car_to_spawn = ExtResource("2_p3ir5")
+
+[node name="Car Spawn 2" type="Marker2D" parent="." unique_id=1470147769]
+position = Vector2(-122, 41)
+gizmo_extents = 0.0
+script = ExtResource("2_paxxb")
+car_to_spawn = ExtResource("2_p3ir5")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=133149899]

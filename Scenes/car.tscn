@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://qt1ecehippy"]
 
-[ext_resource type="Texture2D" uid="uid://c3a05svkw5kmw" path="res://Art/car.png" id="1_wqo35"]
+[ext_resource type="Script" uid="uid://bniuqmpgahikn" path="res://scenes/car.gd" id="1_qt2eu"]
+[ext_resource type="Texture2D" uid="uid://c3a05svkw5kmw" path="res://art/car.png" id="1_wqo35"]
 
 [node name="Car" type="Node2D" unique_id=425227326]
+script = ExtResource("1_qt2eu")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1528854773]
 texture_filter = 1
