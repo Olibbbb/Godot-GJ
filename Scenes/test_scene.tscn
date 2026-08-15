@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://o2ylbafcijig"]
+
+[ext_resource type="Script" uid="uid://cd0l3yj5bnwfe" path="res://scenes/test_scene.gd" id="1_j8ivh"]
+
+[node name="TestScene" type="Node2D" unique_id=2102019432]
+script = ExtResource("1_j8ivh")
+
+[node name="Timer" type="Timer" parent="." unique_id=138688158]
+autostart = true
+
+[node name="Label" type="Label" parent="." unique_id=1417617804]
+offset_left = 14.0
+offset_top = 10.0
+offset_right = 54.0
+offset_bottom = 33.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
