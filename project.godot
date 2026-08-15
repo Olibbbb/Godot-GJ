@@ -14,6 +14,10 @@ config/name="Godot Wild Jam #96"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://art/Other/icon.svg"
 
+[autoload]
+
+PlayerClass="*uid://bkfr8k2weddfa"
+
 [display]
 
 window/stretch/mode="canvas_items"
