@@ -1,6 +1,8 @@
 [gd_scene format=4 uid="uid://bhss5e8oo23ys"]
 
 [ext_resource type="Texture2D" uid="uid://dpw85ux7ri542" path="res://iso_tileset.png" id="1_ci6au"]
+[ext_resource type="PackedScene" uid="uid://qt1ecehippy" path="res://Scenes/car.tscn" id="2_p3ir5"]
+[ext_resource type="Script" uid="uid://bniuqmpgahikn" path="res://Scenes/car.gd" id="3_myvm1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wijl4"]
 texture = ExtResource("1_ci6au")
@@ -67,3 +69,10 @@ texture_filter = 1
 tile_map_data = PackedByteArray("AAACAAAAAAABAAEAAAAEAAAAAAABAAEAAAD7/wQAAAABAAEAAAD6/wEAAAABAAEAAAADAAIAAAABAAEAAAABAPP/AAABAAEAAAADAPb/AAABAAEAAAAFAPT/AAABAAEAAAAGAPX/AAABAAEAAAD5//P/AAABAAEAAAD3//X/AAABAAEAAAD4//X/AAABAAEAAAD9/wEAAAAEAAEAAAD+/wEAAAAEAAEAAAA=")
 tile_set = SubResource("TileSet_d1hr6")
 y_sort_origin = 1
+
+[node name="Car" parent="." unique_id=425227326 instance=ExtResource("2_p3ir5")]
+z_index = 1
+position = Vector2(-106, 49)
+script = ExtResource("3_myvm1")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=133149899]
