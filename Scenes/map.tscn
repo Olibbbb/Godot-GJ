@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://bhss5e8oo23ys"]
 
 [ext_resource type="Texture2D" uid="uid://dpw85ux7ri542" path="res://iso_tileset.png" id="1_ci6au"]
-[ext_resource type="PackedScene" uid="uid://qt1ecehippy" path="res://scenes/car.tscn" id="2_p3ir5"]
+[ext_resource type="PackedScene" uid="uid://qt1ecehippy" path="res://Scenes/car.tscn" id="2_p3ir5"]
 [ext_resource type="Script" uid="uid://4v6eo5dixm8o" path="res://car_spawning.gd" id="2_paxxb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wijl4"]

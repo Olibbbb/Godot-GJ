@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dkkdoj5o2uwbb"]
+
+[ext_resource type="PackedScene" uid="uid://ljqo8dgpe0ev" path="res://3D Test/Models/land.blend" id="1_a202f"]
+
+[node name="Node3D" type="Node3D" unique_id=377946806]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1450784689]
+transform = Transform3D(0.7071068, -0.4055798, 0.579228, 0, 0.81915206, 0.57357645, -0.7071068, -0.4055798, 0.579228, 1.7349668, 1.4123996, 1.9543636)
+
+[node name="land" parent="." unique_id=379825514 instance=ExtResource("1_a202f")]
+transform = Transform3D(0.8000023, 0, -0.5999969, 0, 1, 0, 0.5999969, 0, 0.8000023, -0.66209674, 0, -6.055949)
