@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dpw85ux7ri542" path="res://iso_tileset.png" id="1_d3x0h"]
 [ext_resource type="Script" uid="uid://4v6eo5dixm8o" path="res://scripts/car_spawning.gd" id="2_xgpx1"]
-[ext_resource type="PackedScene" uid="uid://qt1ecehippy" path="res://Scenes/car.tscn" id="3_0650q"]
+[ext_resource type="PackedScene" uid="uid://qt1ecehippy" path="res://scenes/car.tscn" id="3_0650q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rxi31"]
 texture = ExtResource("1_d3x0h")
@@ -57,6 +57,10 @@ tile_offset_axis = 1
 tile_size = Vector2i(32, 16)
 sources/0 = SubResource("TileSetAtlasSource_rxi31")
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v7ld6"]
+radius = 4.990299
+height = 26.696754
+
 [node name="Map1" type="Node2D" unique_id=1398373177]
 y_sort_enabled = true
 
@@ -73,6 +77,20 @@ texture_filter = 1
 tile_map_data = PackedByteArray("AAACAAAAAAABAAEAAAAEAAAAAAABAAEAAAD7/wQAAAABAAEAAAD6/wEAAAABAAEAAAADAAIAAAABAAEAAAABAPP/AAABAAEAAAADAPb/AAABAAEAAAAFAPT/AAABAAEAAAAGAPX/AAABAAEAAAD5//P/AAABAAEAAAD3//X/AAABAAEAAAD4//X/AAABAAEAAAD9/wEAAAAEAAEAAAD+/wEAAAAEAAEAAAA=")
 tile_set = SubResource("TileSet_d1hr6")
 y_sort_origin = 1
+
+[node name="Area2D" type="Area2D" parent="Layer1_Structures" unique_id=2067909093]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Layer1_Structures/Area2D" unique_id=1842868549]
+position = Vector2(-28, 13)
+rotation = 1.0471976
+shape = SubResource("CapsuleShape2D_v7ld6")
+
+[node name="Area2D2" type="Area2D" parent="Layer1_Structures" unique_id=1090872897]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Layer1_Structures/Area2D2" unique_id=1834665928]
+position = Vector2(-49, 3.999999)
+rotation = 1.0471976
+shape = SubResource("CapsuleShape2D_v7ld6")
 
 [node name="Car Spawn 1" type="Marker2D" parent="." unique_id=1902307524]
 position = Vector2(-106, 49)
